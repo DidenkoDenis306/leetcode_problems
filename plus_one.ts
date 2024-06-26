@@ -1,3 +1,3 @@
 function plusOne(digits: number[]): number[] {
-    return String(Number(digits.map(String).join('')) + 1).split('').map(Number)
+    return String(BigInt(digits.map(String).join('')) + BigInt(1)).split('').map(Number)
 };
